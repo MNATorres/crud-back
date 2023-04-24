@@ -1,0 +1,29 @@
+###
+post http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Nehuen Torres",
+    "age": 28,
+    "email": "matias@continental.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/642604d9d22eb7a2b7f86362 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/642604d9d22eb7a2b7f86362 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Matias Torres",
+    "age": 28,
+    "email": "matirack@gmail.com"
+}
+
+
+###
+DELETE http://localhost:9000/api/users/6425ff78ea6b464b7c922a55 HTTP/1.1
